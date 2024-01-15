@@ -1,7 +1,18 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 # Create your views here.
 
-def index(request):
-    d = {'name' : 'abu', 'age': 10}
-    return render(request,'first_app/index.html', context=d) 
+def home(request):
+    d = {
+        'name' : 'abu naim abdullah',
+        'age' : 20,
+        'courses' : ['python', 'JS', 'C']
+    }
+    return render(request, 'first_app/home.html',context=d)
+
+def about(request):
+    return render(request, 'first_app/about.html')
+
+def service(request):
+    return render(request, 'first_app/service.html')
