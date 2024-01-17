@@ -12,5 +12,12 @@
     <h1>Hello I am from HOME</h1>
     <h1>{{name}}</h1>
     <h1>{{age}}</h1>
+    <h1>{{ courses | join:" - " }}</h1>
+    <h1>{{ enroll_date | date:"D d M Y" }}</h1>
+    <h1>{{ courses | first }}</h1>
+    <h1>length : {{ empty | length }}</h1>
+    <h1>{{ name | title }}</h1>
+    <h1>{{ courses | slice:":2" }}</h1>
+    <h1>{{ name | truncatechars:7 }}</h1>
 </body>
 </html>
